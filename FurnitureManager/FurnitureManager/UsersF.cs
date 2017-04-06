@@ -131,7 +131,7 @@ namespace FurnitureManager
             users.Address = textaddress.Text;
             users.Username = textusername.Text;
             users.Password = textpassword.Text;
-            users.IsAdmin = chkAdmin.Checked;
+           // users.IsAdmin = chkAdmin.Checked;
 
             DataAccess d1 = new DataAccess();
                 d1.AddUser(users);
@@ -147,7 +147,7 @@ namespace FurnitureManager
             users.Address = textaddress.Text;
             users.Username = textusername.Text;
             users.Password = textpassword.Text;
-            users.IsAdmin = chkAdmin.Checked;
+           // users.IsAdmin = chkAdmin.Checked;
 
             DataAccess d1 = new DataAccess();
             d1.UpdateUser(users);
@@ -162,7 +162,7 @@ namespace FurnitureManager
             users.Address = textaddress.Text;
             users.Username = textusername.Text;
             users.Password = textpassword.Text;
-            users.IsAdmin = chkAdmin.Checked;
+           // users.IsAdmin = chkAdmin.Checked;
 
             DataAccess d1 = new DataAccess();
             d1.DeleteUser(users);

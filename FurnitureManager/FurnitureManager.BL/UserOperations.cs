@@ -15,22 +15,11 @@ namespace FurnitureManager.BL
         {
             DataAccess dal = new DataAccess();
             User user = dal.GetUser(username, password);
-            if (user != null)
-            {
-               Security secure = new Security();
-                if (secure.VerifyHash(password, user.Password))
-               {
-                    return user;
-                }
-            }
-           return null;
+           return user;
         }
 
-        public void AddUser(User user)
+        public void AddUsers(User user)
         {
-            Security secure = new Security();
-            user.Password = secure.HashSHA1(user.Password);
-
             DataAccess dal = new DataAccess();
             dal.AddUser(user);
         }

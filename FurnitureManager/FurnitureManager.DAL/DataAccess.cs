@@ -28,7 +28,7 @@ namespace FurnitureManager.DAL
             {
 
                 conn.Open();
-                string statement = "SELECT * FROM users where username='username'  and password=SHA('password')";
+                string statement = "SELECT * FROM Users where username=\"" + username + "\" and password=\""+password+"\";";
 
                 MySqlCommand cmd = new MySqlCommand(statement, conn);
                
@@ -37,11 +37,11 @@ namespace FurnitureManager.DAL
                 {
                     {
                         User user = new User();
-                        user.ID = reader.GetInt32("ID");
-                        user.Name = reader.GetString("Name");
-                        user.Address = reader.GetString("Address");
-                        user.Username = reader.GetString("Username");
-                        user.Password = reader.GetString("Password");
+                        user.ID = reader.GetInt32("id");
+                        user.Name = reader.GetString("name");
+                        user.Address = reader.GetString("address");
+                        user.Username = reader.GetString("username");
+                        user.Password = reader.GetString("password");
                         user.IsAdmin = reader.GetBoolean("isAdmin");
 
 
@@ -217,6 +217,28 @@ namespace FurnitureManager.DAL
                 cmd.Parameters.AddWithValue("@address", orders.Address);
                 cmd.Parameters.AddWithValue("@status", orders.Status);
                 cmd.ExecuteNonQuery();
+            }
+        }
+
+        public void DeleteOrder(Order orders)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connString))
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "DELETE FROM orders WHERE id=@id";
+                cmd.Prepare();
+
+                cmd.Parameters.AddWithValue("@id", orders.ID);
+                cmd.Parameters.AddWithValue("@customer", orders.Customer);
+                cmd.Parameters.AddWithValue("@date", orders.Date);
+                cmd.Parameters.AddWithValue("@address", orders.Address);
+                cmd.Parameters.AddWithValue("@status", orders.Status);
+                cmd.ExecuteNonQuery();
+
+
+
             }
         }
 

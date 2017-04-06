@@ -71,7 +71,6 @@
             this.textpassword.Name = "textpassword";
             this.textpassword.Size = new System.Drawing.Size(100, 20);
             this.textpassword.TabIndex = 3;
-            this.textpassword.Click += new System.EventHandler(this.txt_password);
             this.textpassword.TextChanged += new System.EventHandler(this.textpassword_TextChanged);
             // 
             // textusername
@@ -80,8 +79,7 @@
             this.textusername.Name = "textusername";
             this.textusername.Size = new System.Drawing.Size(100, 20);
             this.textusername.TabIndex = 4;
-            this.textusername.Click += new System.EventHandler(this.txt_username);
-            this.textusername.TextChanged += new System.EventHandler(this.textpassword_TextChanged);
+            this.textusername.TextChanged += new System.EventHandler(this.textusername_TextChanged);
             // 
             // LoginF
             // 

@@ -20,3 +20,4 @@ C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager\ob
 C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager\obj\Debug\FurnitureManager.UsersF.resources
 C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager\bin\Debug\FurnitureManager.DAL.exe
 C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager\bin\Debug\FurnitureManager.DAL.pdb
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager\obj\Debug\FurnitureManager.LoginForm.resources

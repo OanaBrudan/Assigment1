@@ -48,20 +48,6 @@ namespace FurnitureManager
             MessageBox.Show("Operation succesful");
         }
 
-        private void btn_RetrieveOrder(object sender, EventArgs e)
-        {
-            try
-            {
-                DataAccess d1 = new DataAccess();
-
-                gridOrders.DataSource = d1.RetrieveOrders();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void EmptyControls()
         {
             txtid.Text = string.Empty;
@@ -131,6 +117,34 @@ namespace FurnitureManager
         private void txtdate_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_RetrieveOrder(object sender, EventArgs e)
+        {
+            try
+            {
+                DataAccess d1 = new DataAccess();
+
+                gridOrders.DataSource = d1.RetrieveOrders();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn_DeleteOrder(object sender, EventArgs e)
+        {
+            Order orders = new Order();
+            orders.ID = Convert.ToInt32(txtid.Text);
+            orders.Customer = txtcustomer.Text;
+            orders.Address = txtaddress.Text;
+            orders.Date = txtdate.Value;
+            orders.Status = txtstatus.Text;
+
+            DataAccess d1 = new DataAccess();
+            d1.DeleteOrder(orders);
+            MessageBox.Show("Operation succesful");
         }
     }
 }

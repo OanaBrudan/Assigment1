@@ -31,10 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.gridusers = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -48,7 +48,6 @@
             this.textid = new System.Windows.Forms.TextBox();
             this.textname = new System.Windows.Forms.TextBox();
             this.textaddress = new System.Windows.Forms.TextBox();
-            this.chkAdmin = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridusers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +71,6 @@
             this.gridusers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridusers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
-            this.Name,
             this.Address,
             this.Username,
             this.Password});
@@ -93,12 +91,6 @@
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
             // 
-            // Name
-            // 
-            this.Name.DataPropertyName = "Name";
-            this.Name.HeaderText = "Name";
-            this.Name.Name = "Name";
-            // 
             // Address
             // 
             this.Address.DataPropertyName = "Address";
@@ -117,6 +109,12 @@
             this.Password.DataPropertyName = "Password";
             this.Password.HeaderText = "Password";
             this.Password.Name = "Password";
+            // 
+            // Name
+            // 
+            this.Name.DataPropertyName = "Name";
+            this.Name.HeaderText = "Name";
+            this.Name.Name = "Name";
             // 
             // button1
             // 
@@ -241,23 +239,11 @@
             this.textaddress.Click += new System.EventHandler(this.txt_address);
             this.textaddress.TextChanged += new System.EventHandler(this.textaddress_TextChanged);
             // 
-            // chkAdmin
-            // 
-            this.chkAdmin.AutoSize = true;
-            this.chkAdmin.Location = new System.Drawing.Point(83, 261);
-            this.chkAdmin.Name = "chkAdmin";
-            this.chkAdmin.Size = new System.Drawing.Size(80, 17);
-            this.chkAdmin.TabIndex = 25;
-            this.chkAdmin.Text = "checkBox1";
-            this.chkAdmin.UseVisualStyleBackColor = true;
-            this.chkAdmin.CheckedChanged += new System.EventHandler(this.chkAdmin_CheckedChanged);
-            // 
             // UsersF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 318);
-            this.Controls.Add(this.chkAdmin);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textpassword);
@@ -273,7 +259,7 @@
             this.Controls.Add(this.textaddress);
             this.Controls.Add(this.textname);
             this.Controls.Add(this.textid);
-           // this.Name = "UsersF";
+          //  this.Name = "UsersF";
             this.Text = "UsersF";
             this.Load += new System.EventHandler(this.UsersF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridusers)).EndInit();
@@ -301,11 +287,10 @@
         private System.Windows.Forms.TextBox textname;
         private System.Windows.Forms.TextBox textaddress;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+       // private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn Username;
         private System.Windows.Forms.DataGridViewTextBoxColumn Password;
-        private System.Windows.Forms.CheckBox chkAdmin;
-        // private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
     }
 }

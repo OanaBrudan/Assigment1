@@ -54,6 +54,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FurnitureManager.BL\FurnitureManager.BL.csproj">
+      <Project>{39a20c40-8eed-45cb-a685-32310fab0907}</Project>
+      <Name>FurnitureManager.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FurnitureManager.Models\FurnitureManager.Models.csproj">
       <Project>{6f141759-2490-4581-8e67-b9b5bd09edd5}</Project>
       <Name>FurnitureManager.Models</Name>

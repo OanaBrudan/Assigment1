@@ -41,12 +41,13 @@
             this.txtaddress = new System.Windows.Forms.TextBox();
             this.txtstatus = new System.Windows.Forms.TextBox();
             this.gridOrders = new System.Windows.Forms.DataGridView();
-            this.txtdate = new System.Windows.Forms.DateTimePicker();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtdate = new System.Windows.Forms.DateTimePicker();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridOrders)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +98,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(276, 184);
+            this.button1.Location = new System.Drawing.Point(234, 196);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -107,7 +108,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(464, 184);
+            this.button2.Location = new System.Drawing.Point(422, 196);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
@@ -117,7 +118,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(644, 184);
+            this.button3.Location = new System.Drawing.Point(793, 196);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 7;
@@ -184,14 +185,6 @@
             this.gridOrders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridOrders_CellContentClick);
             this.gridOrders.SelectionChanged += new System.EventHandler(this.gridOrders_SelectionChanged);
             // 
-            // txtdate
-            // 
-            this.txtdate.Location = new System.Drawing.Point(93, 158);
-            this.txtdate.Name = "txtdate";
-            this.txtdate.Size = new System.Drawing.Size(140, 20);
-            this.txtdate.TabIndex = 16;
-            this.txtdate.ValueChanged += new System.EventHandler(this.txtdate_ValueChanged);
-            // 
             // ID
             // 
             this.ID.DataPropertyName = "Id";
@@ -225,11 +218,30 @@
             this.Status.HeaderText = "Status";
             this.Status.Name = "Status";
             // 
+            // txtdate
+            // 
+            this.txtdate.Location = new System.Drawing.Point(93, 158);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.Size = new System.Drawing.Size(140, 20);
+            this.txtdate.TabIndex = 16;
+            this.txtdate.ValueChanged += new System.EventHandler(this.txtdate_ValueChanged);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(628, 196);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Delete";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btn_DeleteOrder);
+            // 
             // OrdersF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 261);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.txtdate);
             this.Controls.Add(this.gridOrders);
             this.Controls.Add(this.txtstatus);
@@ -244,7 +256,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-           // this.Name = "OrdersF";
+            this.Name = "OrdersF";
             this.Text = "OrdersF";
             this.Load += new System.EventHandler(this.Order);
             ((System.ComponentModel.ISupportInitialize)(this.gridOrders)).EndInit();
@@ -275,5 +287,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.Button button4;
     }
 }

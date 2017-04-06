@@ -1,0 +1,14 @@
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\bin\Debug\FurnitureManager.BL.exe.config
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\bin\Debug\FurnitureManager.BL.exe
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\bin\Debug\FurnitureManager.BL.pdb
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\obj\Debug\FurnitureManager.BL.Properties.Resources.resources
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\obj\Debug\FurnitureManager.BL.csproj.GenerateResource.Cache
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\obj\Debug\FurnitureManager.BL.exe
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\obj\Debug\FurnitureManager.BL.pdb
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\obj\Debug\FurnitureManager.BL.csprojResolveAssemblyReference.cache
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\bin\Debug\FurnitureManager.DAL.exe
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\bin\Debug\FurnitureManager.Models.exe
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\bin\Debug\FurnitureManager.DAL.pdb
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.BL\bin\Debug\FurnitureManager.Models.pdb

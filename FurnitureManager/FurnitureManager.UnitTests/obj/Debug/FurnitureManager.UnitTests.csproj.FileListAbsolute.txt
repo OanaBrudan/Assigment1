@@ -1,0 +1,7 @@
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.UnitTests\bin\Debug\FurnitureManager.UnitTests.dll
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.UnitTests\bin\Debug\FurnitureManager.UnitTests.pdb
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.UnitTests\bin\Debug\FurnitureManager.Models.exe
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.UnitTests\bin\Debug\FurnitureManager.Models.pdb
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.UnitTests\obj\Debug\FurnitureManager.UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.UnitTests\obj\Debug\FurnitureManager.UnitTests.dll
+C:\Users\Brudan-Oana\Desktop\FirstAssigment\FurnitureManager\FurnitureManager.UnitTests\obj\Debug\FurnitureManager.UnitTests.pdb
